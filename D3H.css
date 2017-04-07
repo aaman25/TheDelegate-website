@@ -1,0 +1,654 @@
+
+
+/*----BODY - - - - - - - - - - - - - - - - - - - - - - - - - */
+body{
+background-color:#eae4dc;
+} 
+/*----TOP NAV - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+     ul.topnav  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #030303;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 80px;
+    z-index: 1025;
+    opacity:0.95;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+  
+    
+
+}
+ul.topnav li {
+     display:block;
+    float: left;
+    height:100%;
+    font-size: 24px;
+    letter-spacing:5px;
+    text-align: center;
+}
+    
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    padding: 2px;
+    text-decoration: none;
+    margin-top:27px;
+        transition: 0.3s;
+
+    
+
+}
+ul.topnav li img#dashImg{
+    display:block;
+    position:absolute;
+    top:31px;
+    right:21%;
+}
+
+
+
+
+
+
+/*----SearchBox - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+ul.topnav li form input[type=text] {
+    width: 65%;
+    min-width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png')  ;
+    background-size: 24px 24px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    top:29px;
+    bottom:auto;
+    height:32px;
+    float:none;
+    position:relative;
+}
+
+ul.topnav li form input[type=text]:focus {
+    width: 90%;
+}
+div.right form input[type=text] {
+    width: 60%;
+    min-width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #030303;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: whitesmoke;
+    background-image: url('http://www.freeiconspng.com/uploads/search-icon-png-10.png')  ;
+    background-size: 24px 24px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    top:20px;
+    bottom:auto;
+    height:32px;
+    float:none;
+    position:relative;
+    margin-left:15%;
+}
+
+div.right form input[type=text]:focus {
+    width: 70%;
+}
+/*----Lower Header - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+ul.lowNav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+	background-image: url("http://img.freepik.com/free-vector/wrinkled-paper-texture_1100-12.jpg?size=338c&ext=jpg") ;
+    top:80px;
+    z-index:1015;
+    position:fixed;
+    opacity:0.92;
+    border-bottom: 2px solid #030303;
+      box-shadow: 10px 0 19px 0 #030303, 10px 0 19px 0 #030303;
+      overflow: hidden;
+      height:auto;
+
+
+}
+ul.lowNav li{
+    width:14.2%;
+    display:block;
+    float:left;
+    height:100%;
+
+}
+
+ul.lowNav li a:hover{
+  color:#5b4f4c;
+}
+ul.lowNav li a{
+    text-decoration: none;
+    color:black;
+    display:block;
+    text-align:center;
+    padding:7px 13px 7px 13px;
+    font-weight:550;
+    height:100%;
+    
+
+
+
+}
+
+
+/*----Icons(Width Mode) - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+ul.lowNav li.icon {display: none;}
+ul.topnav li.searchIcon{display: none;}
+ul.topnav li.dashIcon{display: none;}
+ul.topnav li.delIcon{display:none;}
+div.searchBar{display: none;}
+
+/*--------- - - - ------ - - - - - --- - -------Icons(Phone Mode )--  -  -- -*/
+@media screen and (max-width:950px) {
+  ul.lowNav li:not(:nth-child(4)) {display: none; z-index: 400;}
+  ul.lowNav li.icon {
+    float:right;
+    right:0;
+    display: block;
+    position: absolute;
+  }
+  ul.topnav li{display:none;}
+
+   ul.topnav li.nightHover{
+      float:left;
+      left:10px;
+      display: block;
+      position:absolute;
+  }
+  ul.topnav li.searchIcon{
+      float:left;
+      left:10%;
+      display: block;
+      position:absolute;
+  }
+  ul.topnav li.dashIcon{
+      float:right;
+      right:0;
+      display:block;
+      position:absolute;
+      padding:0 10px;
+  }
+  ul.topnav li.delIcon{
+      float:left;
+      position: absolute;
+      display: block;
+      left:20%;
+      letter-spacing:8px;
+      font-size:15px;
+  }
+  
+}
+
+
+
+
+
+
+   /*--------- - - - ------ - - - - - --- - -------responsive(Low NAV )--  -  -- -*/
+@media screen and (max-width:950px) {
+  
+  ul.lowNav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index:900;
+  }
+  ul.lowNav.responsive li {
+    display: inline;
+    z-index: 900;
+    float: none;
+  }
+  ul.lowNav.responsive li a {
+    display: block;
+    text-align: center;
+    z-index: 900;
+  }
+  div.searchBar.expand {
+    display: block;
+    z-index:1021;
+    background-color: #030303;
+    height:40px;
+    top:80px;
+    position: fixed;
+    width:100%;
+
+}
+div.searchBar.expand form input[type=text]{
+    display: block;
+    z-index: 1111;
+    width:80%;
+    height:30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png')  ;
+    background-size: 24px 24px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    top:5px;
+    float:none;
+    position: absolute;
+    left:10%;
+}
+}
+
+
+/*----Banner - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+div.wall{
+    z-index: 1000;
+    position: fixed;
+    top:120px;
+    width:100%;
+    -webkit-box-shadow: -5px 8px 51px -6px rgba(0,0,0,0.86);
+-moz-box-shadow: -5px 8px 51px -6px rgba(0,0,0,0.86);
+box-shadow: -5px 8px 51px -6px rgba(0,0,0,0.86);
+background-color:#030303; 
+}
+div.banner{
+     -webkit-box-shadow: -5px 8px 51px -6px rgba(0,0,0,0.86);
+-moz-box-shadow: -5px 8px 51px -6px rgba(0,0,0,0.86);
+box-shadow: -5px 8px 51px -6px rgba(0,0,0,0.86);
+background-color:#030303; 
+    
+
+}
+
+/*----Page Content - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.content {
+	width: 100%;
+	background-image: url("http://img.freepik.com/free-vector/wrinkled-paper-texture_1100-12.jpg?size=338c&ext=jpg") ;
+    z-index: 1005;
+    top:630px;
+        position: absolute;
+              box-shadow: 15px 0 15px 0 #030303, 0 0 15px 0 #030303;
+              border-top:#030303 9px solid;
+              border-bottom:2px #030303 solid;
+              height:720px;
+              overflow: hidden;
+
+
+}
+
+
+
+/*------------night mode(Complete)------------------------------------------------------------------*/
+div.content.nightmode {
+	width: 100%;
+	background-image: url("http://images.all-free-download.com/images/graphiclarge/black_texture_texture_background_06_hd_pictures_169901.jpg") ;
+        background-color: #030303;
+            color:#ba8651;
+
+    z-index: 1005;
+    top:630px;
+        position: absolute;
+              box-shadow: 15px 0 15px 0 #030303, 0 0 15px 0 #030303;
+              border-top:#030303 9px solid;
+              border-bottom:2px #030303 solid;
+              height:720px;
+              overflow: hidden;
+              transition: 0.1s;
+
+
+}
+div.content.nightmodephone {
+	width: 100%;
+	background-image: url("http://images.all-free-download.com/images/graphiclarge/black_texture_texture_background_06_hd_pictures_169901.jpg") ;
+        background-color: #030303;
+            color:#ba8651;
+
+    z-index: 1005;
+    top:630px;
+        position: absolute;
+              box-shadow: 15px 0 15px 0 #030303, 0 0 15px 0 #030303;
+              border-top:#030303 9px solid;
+              border-bottom:2px #030303 solid;
+              height:720px;
+              overflow: hidden;
+              transition: 0.1s;
+
+
+}
+ul.lowNav.nightmode{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+	background-image: url("http://images.all-free-download.com/images/graphiclarge/black_texture_texture_background_06_hd_pictures_169901.jpg") ;
+    top:80px;
+    z-index:1015;
+    position:fixed;
+    opacity:0.92;
+    border-bottom: 2px solid #030303;
+      box-shadow: 10px 0 19px 0 #030303, 10px 0 19px 0 #030303;
+      overflow: hidden;
+      height:auto;
+     transition: 0.1s;
+
+
+
+}
+ul.lowNav.nightmode li{
+    width:14.2%;
+    display:block;
+    float:left;
+    height:100%;
+                  transition: 0.1s;
+
+}
+
+ul.lowNav.nightmode li a:hover{
+  color:#5b4f4c;
+
+}
+ul.lowNav.nightmode li a{
+    text-decoration: none;
+    color:#9b4c07;
+    display:block;
+    text-align:center;
+    padding:7px 13px 7px 13px;
+    font-weight:550;
+    height:100%;
+                  transition: 0.1s;
+
+    
+
+
+
+}
+ul.lowNav.nightmode li.icon {display: none;transition: 0.1s;}
+
+ul.topnav.nightmode  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #030303;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 80px;
+    z-index: 1015;
+    opacity:0.95;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.3s;
+
+  
+    
+
+}
+ul.topnav.nightmode li {
+     display:block;
+    float: left;
+    height:100%;
+    font-size: 24px;
+    letter-spacing:5px;
+    text-align: center;
+        transition: 0.3s;
+
+}
+    
+
+ul.topnav.nightmode li a {
+    display: block;
+    color: #bcb9b7;
+    padding: 2px;
+    text-decoration: none;
+    margin-top:27px;
+        transition: 0.3s;
+            transition: 0.3s;
+
+
+    
+
+}
+ul.topnav.nightmode li img#dashImg{
+    display:block;
+    position:absolute;
+    top:31px;
+    right:21%;
+        transition: 0.3s;
+
+}
+
+
+
+
+
+
+/*----SearchBox - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+ul.topnav.nightmode li form input[type=text] {
+    width: 65%;
+    min-width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #6d6a68;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: #bcb9b7;
+    background-image: url('http://iconshow.me/media/images/ui/slim-square-icons/png/256/search.png')  ;
+    background-size: 24px 24px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    top:29px;
+    bottom:auto;
+    height:32px;
+    float:none;
+    position:relative;
+        transition: 0.3s;
+
+}
+
+ul.topnav.nightmode li form input[type=text]:focus {
+    width: 90%;
+        transition: 0.3s;
+
+}
+ul.topnav.nightmode li.searchIcon{display: none;    transition: 0.3s;}
+ul.topnav.nightmode li.dashIcon{display: none;    transition: 0.3s;}
+ul.topnav.nightmode li.delIcon{display:none;    transition: 0.3s;}
+
+@media screen and (max-width:950px) {
+  ul.lowNav.nightmodephone li:not(:nth-child(4)) {display: none; z-index: 400;}
+  ul.lowNav.nightmodephone li.icon {
+    float:right;
+    right:0;
+    display: block;
+    position: absolute;
+    transition: 0.1s;
+    
+  }
+  ul.lowNav.nightmodephone{
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+	background-image: url("http://images.all-free-download.com/images/graphiclarge/black_texture_texture_background_06_hd_pictures_169901.jpg") ;
+    z-index:1015;
+    position:fixed;
+    opacity:0.92;
+    border-bottom: 2px solid #030303;
+      box-shadow: 10px 0 19px 0 #030303, 10px 0 19px 0 #030303;
+      overflow: hidden;
+      height:auto;
+     transition: 0.1s;
+  }
+   ul.lowNav.nightmodephone li.icon a{
+    
+    display: block;
+    transition: 0.1s;
+    color:#9b4c07;
+    
+  }
+   ul.lowNav.nightmodephone li a{
+    
+    display: block;
+    transition: 0.1s;
+    color:#9b4c07;
+    
+  }
+  ul.topnav.nightmodephone li{display:none;}
+   ul.topnav.nightmodephone li.nightHover{
+      float:left;
+      left:10px;
+      display: block;
+      position:absolute;
+      color:#9b4c07;
+    transition: 0.1s;
+  }
+  ul.topnav.nightmodephone li.searchIcon{
+      float:left;
+      left:10%;
+      display: block;
+      position:absolute;
+    color: #bcb9b7;
+              transition: 0.1s;
+
+
+   
+  }
+  ul.topnav.nightmodephone li.dashIcon{
+      float:right;
+      right:0;
+      display:block;
+      position:absolute;
+      padding:0 10px;
+    color: #bcb9b7;
+              transition: 0.1s;
+      
+  }
+  ul.topnav.nightmodephone li.delIcon{
+      float:left;
+      position: absolute;
+      display: block;
+      left:20%;
+      letter-spacing:8px;
+      font-size:15px;
+    color: #bcb9b7;
+              transition: 0.1s;
+  }
+    ul.topnav.nightmodephone li.delIcon a{
+      display: block;
+    color: #bcb9b7;
+              transition: 0.1s;
+  }
+}
+@media screen and (max-width:950px) {
+      ul.lowNav.responsive.nightmodephone{
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+	background-image: url("http://images.all-free-download.com/images/graphiclarge/black_texture_texture_background_06_hd_pictures_169901.jpg") ;
+    z-index:1015;
+    position:fixed;
+    opacity:0.92;
+    border-bottom: 2px solid #030303;
+      box-shadow: 10px 0 19px 0 #030303, 10px 0 19px 0 #030303;
+      overflow: hidden;
+      height:auto;
+     transition: 0.1s;
+  }
+  
+  ul.lowNav.responsive.nightmodephone li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index:900;
+    display:block;
+   
+  }
+  ul.lowNav.responsive.nightmodephone li.icon  a{
+   
+    display:block;
+    color:#9b4c07;
+    transition: 0.1s;
+   
+  }
+  ul.lowNav.responsive.nightmodephone li {
+    display: inline;
+    z-index: 900;
+    float: none;
+    transition: 0.1s;
+
+  }
+  ul.lowNav.responsive.nightmodephone li a {
+    display: block;
+    text-align: center;
+    z-index: 900;
+    color:#9b4c07;
+    transition: 0.1s;
+  }
+
+  div.searchBar.expand.nightmodephone {
+    display: block;
+    z-index:1021;
+    background-color: #030303;
+    height:40px;
+    top:80px;
+    position: fixed;
+    width:100%;
+
+}
+div.searchBar.expand.nightmodephone form input[type=text]{
+    display: block;
+    z-index: 1111;
+    width:80%;
+    height:30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png')  ;
+    background-size: 24px 24px;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    top:5px;
+    float:none;
+    position: absolute;
+    left:10%;
+}
+}
